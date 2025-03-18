@@ -1,0 +1,22 @@
+<?php
+
+//añadir un registro a un arreglo
+
+$musica = array("Kpop","Pop","Rock","Metal");
+
+$musica[]="Pop latino";
+
+print_r(value: $musica);
+
+//eliminar un registro de un arreglo
+
+$eliminarmusica="Rock";
+$llave=array_search(needle: $eliminarmusica,haystack: $musica);
+
+if($llave!==false){
+    unset($musica[$llave]);
+}
+
+print_r(value: $musica);
+
+?>

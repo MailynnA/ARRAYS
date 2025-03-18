@@ -1,0 +1,20 @@
+<?php
+
+//añadir un registro a un arreglo
+
+$musica = array("Kpop","Pop","Rock","Metal");
+
+$musica[]="Pop latino";
+
+print_r(value: $musica);
+
+$musica[1]="R&B";
+print_r(value: $musica);
+
+$musica[3]="Rap";
+print_r(value: $musica);
+
+$musicaSeleccionados = array_slice($musica,1,2);
+print_r($musicaSeleccionados);
+
+?>
